@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3EFD602-19DD-4165-B99C-6FB795027C62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WA_MicroProject_PL</RootNamespace>
+    <AssemblyName>WA_MicroProject_PL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent_Form.Designer.cs">
+      <DependentUpon>MDIParent_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_AddItem_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_AddItem_PL.Designer.cs">
+      <DependentUpon>MP_AddItem_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_AddUsers_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_AddUsers_PL.Designer.cs">
+      <DependentUpon>MP_AddUsers_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_BillMaster_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_BillMaster_PL.Designer.cs">
+      <DependentUpon>MP_BillMaster_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_BillTrans_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_BillTrans_PL.Designer.cs">
+      <DependentUpon>MP_BillTrans_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_ChangePassword_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_ChangePassword_PL.Designer.cs">
+      <DependentUpon>MP_ChangePassword_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_DeleteItem_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_DeleteItem_PL.Designer.cs">
+      <DependentUpon>MP_DeleteItem_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_DeleteUser_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_DeleteUser_PL.Designer.cs">
+      <DependentUpon>MP_DeleteUser_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_EditItem_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_EditItem_PL.Designer.cs">
+      <DependentUpon>MP_EditItem_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_ViewBill_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_ViewBill_PL.Designer.cs">
+      <DependentUpon>MP_ViewBill_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MP_ViewUser_PL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MP_ViewUser_PL.Designer.cs">
+      <DependentUpon>MP_ViewUser_PL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent_Form.resx">
+      <DependentUpon>MDIParent_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_AddItem_PL.resx">
+      <DependentUpon>MP_AddItem_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_AddUsers_PL.resx">
+      <DependentUpon>MP_AddUsers_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_BillMaster_PL.resx">
+      <DependentUpon>MP_BillMaster_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_BillTrans_PL.resx">
+      <DependentUpon>MP_BillTrans_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_ChangePassword_PL.resx">
+      <DependentUpon>MP_ChangePassword_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_DeleteItem_PL.resx">
+      <DependentUpon>MP_DeleteItem_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_DeleteUser_PL.resx">
+      <DependentUpon>MP_DeleteUser_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_EditItem_PL.resx">
+      <DependentUpon>MP_EditItem_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_ViewBill_PL.resx">
+      <DependentUpon>MP_ViewBill_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MP_ViewUser_PL.resx">
+      <DependentUpon>MP_ViewUser_PL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLib_MicroProject_BLL\CLib_MicroProject_BLL.csproj">
+      <Project>{edcd3a2d-6380-4c3d-947e-41ca310e656c}</Project>
+      <Name>CLib_MicroProject_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CLib_MicroProject_CDL\CLib_MicroProject_CDL.csproj">
+      <Project>{f5540f30-4b71-4b4e-bb8f-f392638427ff}</Project>
+      <Name>CLib_MicroProject_CDL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
